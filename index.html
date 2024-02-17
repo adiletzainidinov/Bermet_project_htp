@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-nav">
+          <div class="name">
+            <a href="#main"> <h1>Бермет</h1></a>
+          </div>
+          <div class="about">
+            <a href="#main">
+              <h1>Главная</h1>
+            </a>
+            <a href="#vlog">
+              <h2>Влог</h2>
+            </a>
+            <a href="#my_history">
+              <h3>Моя история</h3>
+            </a>
+            <a href="#my_life">
+              <h4>Моя жизнь</h4>
+            </a>
+            <a href="#subscribe">
+              <h5>Подписатся</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <div class="my-life-background">
+          <video autoplay muted loop id="backgroundVideo">
+            <source src="./Bermet.img/bac_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="image-main">
+            <img
+              src="./Bermet.img/a-girl-in-a-white-hijab-with-a-cute-face-reads-books-925784642.png"
+              alt="img"
+            />
+            <img src="./Bermet.img/img-animate.jpg" alt="Bermet" />
+          </div>
+
+          <div class="my-life">
+            <h3 class="box-img">
+              Нажми и удерживай &#128070; <br />
+              чтобы увидеть меня &#128540;
+            </h3>
+            <div class="box">
+              <h1>БЕРМЕТ</h1>
+              <div class="line"></div>
+              <h2>Учусь в исламском университете, будущий устаза ;)</h2>
+            </div>
+            <h6 class="book-name">ХАДИДЖА</h6>
+            <div>
+              <input type="checkbox" id="book-toggle" />
+              <label class="book-btn" for="book-toggle">
+                <span class="book-btn-span"
+                  >Нажми чтобы узнать мою любимую книгу &#128123;</span
+                >
+              </label>
+
+              <h6 class="book-name">ХАДИДЖА</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vlog">
+      <div class="container">
+        <div class="box_vlog">
+          <div class="vlog_top_box">
+            <div class="vlog_top">
+              <h1>Влог</h1>
+              <button><ion-icon name="play"></ion-icon> Смотреть</button>
+              <img
+                src="./Bermet.img/girl-in-a-white-hijab-rides-a-horse-into-the-mountains-sun-beautiful-560311023.png"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="search_input">
+            <form action="/search" method="GET">
+              <label for="search"></label>
+              <input
+                type="search"
+                id="search"
+                name="q"
+                placeholder="Найти фото Бермета"
+              />
+              <button type="submit">Искать</button>
+            </form>
+          </div>
+          <div class="more_photo">
+            <div class="img_fist">
+              <img src="./Bermet.img/img_1.png" alt="img" />
+              <h1>Семья Бермета</h1>
+            </div>
+            <div class="img_second">
+              <img src="./Bermet.img/img_2.png" alt="img" />
+              <h1>Друзья Бермета</h1>
+            </div>
+            <div class="img_third">
+              <img src="./Bermet.img/img_3.png" alt="img" />
+              <h1>Бермет на отдыхе</h1>
+            </div>
+            <div class="img_four">
+              <img src="./Bermet.img/img_4.png" alt="img" />
+              <h1>Бермет в учебе</h1>
+            </div>
+          </div>
+          <div class="bottom_btn">
+            <button>Больше фото</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="my_history">
+      <div class="container">
+        <div class="history_box">
+          <div class="my_history_text">
+            <h1>ЭТО МОЯ ИСТОРИЯ</h1>
+            <h2>
+              В моей жизни главными героями являются мои родители. Их ласковые
+              объятия и утренние поцелуи создают волшебное начало каждого дня.
+              Хоть у меня нет постоянных увлечений, я люблю разнообразие: спорт,
+              танцы, книги - что угодно, что приносит радость в моменты, когда
+              это возможно.
+              <br /><br />
+              Важным для меня является также вклад в свою семью и собственное
+              развитие. Чтение книг, обучение и вложения в себя - это то, что
+              делает мою жизнь насыщенной. Моя заветная мечта - построить
+              университет, ставший символом знаний.
+            </h2>
+          </div>
+          <div class="my_photo">
+            <img src="./Bermet.img/my_history.jpg" alt="" />
+            <div class="height_line"></div>
+          </div>
+        </div>
+        <button class="text_btn">Подписаться</button>
+        <div class="width_line"></div>
+      </div>
+    </section>
+
+    <section id="my_life">
+      <div class="container">
+        <div class="pictures_box">
+          <h1>#БЕРМЕТ В INSTAGRAM</h1>
+          <div class="all_pictures">
+            <div class="top_all_pictures">
+              <div class="first_pictures_first">
+                <div class="top_pictures">
+                  <div class="first_img">
+                    <img src="./Bermet.img/fist_img.jpg" alt="img" />
+                  </div>
+                  <div class="second_img">
+                    <img src="./Bermet.img/second_img.jpg" alt="img" />
+                  </div>
+                </div>
+                <div class="bottom_pictures">
+                  <div class="third_img">
+                    <img src="./Bermet.img/third_img.jpg" alt="img" />
+                  </div>
+                  <div class="four_img">
+                    <img src="./Bermet.img/four_img.jpg" alt="img" />
+                  </div>
+                </div>
+              </div>
+              <div class="first_pictures_second">
+                <img src="./Bermet.img/second_img_main.jpg" alt="" />
+              </div>
+            </div>
+            <div class="bottom_all_pictures">
+              <div class="bottom_pictures_four">
+                <img src="./Bermet.img/bottom_four_img_main.jpg" alt="" />
+              </div>
+              <div class="bottom_pictures_third">
+                <div class="top_img_in_bottom">
+                  <div class="bottom_img_first">
+                    <img src="./Bermet.img/bottom_img_first.jpg" alt="" />
+                  </div>
+                  <div class="bottom_img_second">
+                    <img src="./Bermet.img/bottom_img_second.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="bottom_img_in_bottom">
+                  <div class="bottom_img_third">
+                    <img src="./Bermet.img/bottom_img_third.jpg" alt="" />
+                  </div>
+                  <div class="bottom_img_four">
+                    <img src="./Bermet.img/bottom_img_four.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="show_more">показать еще</button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="subscribe">
+      <div class="container">
+        <div class="subscribe_box">
+          <div class="top_box">
+            <div class="connection">
+              <h1>БУДЕМ НА СВЯЗИ</h1>
+            </div>
+            <div class="icon">
+              <div class="vk_icon">
+                <ion-icon name="logo-vk"></ion-icon>
+              </div>
+              <div class="you_tube_icon">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </div>
+              <div class="snapchat_icon">
+                <ion-icon name="logo-snapchat"></ion-icon>
+              </div>
+              <div class="instagram_icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </div>
+              <div class="twitter_icon">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </div>
+              <div class="facebook_icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_box">
+            <div class="social_media">
+              <h1>ПИШИТЕ, ВСЕГДА ОТВЕЧУ</h1>
+              <h2>УСТАЗА أستاذ</h2>
+              <a href="https://www.google.com/intl/ru/gmail/about/"
+                ><h3>adiletzainidinov20gmail.com</h3></a
+              >
+              <h4>ИНСТАГРАМ</h4>
+              <a
+                href="https://www.instagram.com/codewith_adilet?igsh=MWoxa2V3M3FhdnhqbA=="
+              >
+                <h5>codewhith_adilet</h5>
+              </a>
+              <h6>© 2024 Бермет. Сайт создал Зайнидинов Адилет</h6>
+            </div>
+            <div class="social_media_btn">
+              <div class="name_btn">
+                <form action="/submit" method="post">
+                  <!-- Используем placeholder для текста внутри текстового поля -->
+                  <input
+                    type="text"
+                    id="userInput"
+                    name="userInput"
+                    placeholder="Имя"
+                  />
+
+                  <!-- Убираем текст у кнопки отправки -->
+                  <!-- <input type="submit" value=""> -->
+                </form>
+              </div>
+              <div class="gmail_btn">
+                <form action="/submit" method="post">
+                  <!-- Используем placeholder для текста внутри поля ввода email -->
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    placeholder="Эл.почта"
+                  />
+
+                  <!-- Убираем текст у кнопки отправки -->
+                  <!-- <input type="submit" value=""> -->
+                </form>
+              </div>
+              <div class="send_btn">
+                <form action="/submit" method="post">
+                  <!-- Используем placeholder для текста внутри поля ввода сообщения -->
+                  <textarea
+                    id="userMessage_send"
+                    name="userMessage"
+                    placeholder="Добавьте сообщение..."
+                  ></textarea>
+
+                  <!-- Убираем текст у кнопки отправки и добавляем стили для размещения снизу -->
+                  <input
+                    type="submit"
+                    value="Отправить"
+                    class="submit-button_send"
+                  />
+                </form>
+
+                <!-- css-code---
+                        .submit-button {
+    display: block;
+    margin-top: 10px; /* Выберите нужный отступ снизу от текстового поля */
+    margin-left: 190px;
+}
+                     -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://youtube.com/shorts/_TYXQXDPMuQ?si=Cy0PkaDYaugu2K0O"></a>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

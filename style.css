@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    width: 1400px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* -------------------baza-nastroek------------------- */
+  /* -------------------header-start------------------------- */
+  
+  #header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 89px;
+    /* box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.1); */
+  }
+  .name h1 {
+    color: #242424;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .name h1:hover {
+    color: #5d1ff2;
+  }
+  .about {
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .about h1 {
+    font-size: 16px;
+    color: #5d1ff2;
+  }
+  .about h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 16px;
+    color: #000000;
+  }
+  .about h2:hover,
+  h3:hover,
+  h4:hover,
+  h5:hover {
+    color: #5d1ff2;
+  }
+  
+  /* ----------------header-finish---------------------------- */
+  /* ----------------main-start---------------------------- */
+  
+  .my-life_bacgraund {
+    width: 100%;
+    height: 860px;
+    background: #98d8e2 url('./Bermet.img/bac_video.mp4') no-repeat center center
+      fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .box {
+    margin-left: 90px;
+    padding-top: 279px;
+  }
+  .my-life h1 {
+    font-size: 72px;
+    color: #fff049;
+    text-align: center;
+    width: 540px;
+  }
+  .line {
+    background-color: #fff049;
+    width: 532px;
+    height: 1px;
+  }
+  .my-life h2 {
+    color: #fff049;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 540px;
+  }
+  .box_img {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    background-color: #8344ed;
+    text-align: center;
+    padding: 20px 5px 0;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+  }
+  .box_img:hover {
+    background-color: #622bc0;
+  }
+  .box_img:active {
+    color: red;
+  }
+  .img-main img {
+    width: 450px;
+    height: 460px;
+    border-radius: 600px;
+    position: absolute;
+    margin-left: 875px;
+    margin-top: 40px;
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+  .img-main img:active {
+    width: 0.1px;
+    height: 0.1px;
+    border-radius: 600px;
+  }
+  .my-life h3 {
+    padding-left: 60px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: absolute;
+    color: #ffffff;
+    font-size: 22px;
+    width: 300px;
+    margin-left: 920px;
+    margin-top: 530px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition-duration: 0.3;
+    border-radius: 5px;
+  }
+  .my-life h3:hover   {
+      color: red;
+      background-color: #e7e7e71f;
+  }
+  .book-btn {
+    width: 900px;
+    height: 70px;
+    margin-top: 300px;
+    margin-left: 200px;
+    border-radius: 5px;
+    background-color: #ff83d600;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border: solid 2px #ffffff;
+  }
+  .book-btn-span {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 18px;
+  }
+  
+  .book-btn:hover {
+    background-color: #e7e7e71f;
+    color: red;
+  }
+  
+  #book-toggle {
+    display: none;
+  }
+  
+  .book-name {
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-left: 430px;
+    margin-bottom: 90px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  #book-toggle:checked + .book-btn {
+    display: none;
+  }
+  
+  #book-toggle:checked + .book-btn + .book-name {
+    opacity: 1;
+    z-index: 2;
+    color: #fff049;
+  }
+  
+  /* ------ */
+  
+  .my-life-background {
+    width: 100%;
+    height: 860px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #backgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .image-main img {
+    width: 450px;
+    height: 460px;
+    border-radius: 600px;
+    position: absolute;
+    margin-left: 875px;
+    margin-top: 40px;
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+  
+  .image-main img:active {
+    width: 0.1px;
+    height: 0.1px;
+    border-radius: 600px;
+  }
+  
+  .my-life-content h3 {
+    position: absolute;
+    color: #ffff;
+    font-size: 22px;
+    width: 300px;
+    margin-left: 960px;
+    margin-top: 530px;
+  }
+  /* -------------------main-finish-------------------------- */
+  
+  /* -------------------box_vlog-start------------------------- */
+  
+  .box_vlog {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 818px;
+    margin-top: 230px;
+    position: relative;
+  }
+  .vlog_top_box {
+    position: absolute;
+    width: 960px;
+    height: 340px;
+    background-color: #5d1ff2;
+    top: -120px;
+    left: 220px;
+  }
+  .vlog_top img {
+    width: 940px;
+    height: 528px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .vlog_top h1 {
+    position: absolute;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-left: 400px;
+    margin-top: 150px;
+  }
+  .vlog_top button {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #5d1ff2;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    margin-left: 400px;
+    margin-top: 250px;
+  }
+  .vlog_top button:hover {
+    background-color: #3901bd;
+  }
+  .vlog_top button:active {
+    background-color: #1b0353;
+  }
+  
+  .search_input input {
+    width: 880px;
+    height: 42px;
+    margin-top: 450px;
+    margin-left: 230px;
+    padding-left: 30px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .search_input input:hover {
+    opacity: 0.9;
+  }
+  .search_input input:active {
+    background-color: #dcdcdc;
+    border: none;
+  }
+  .search_input button {
+    width: 60px;
+    height: 42px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .search_input button:hover {
+    opacity: 0.9;
+  }
+  .search_input button:active {
+    background-color: #dcdcdc;
+    border: none;
+  }
+  
+  .img_fist img,
+  .img_second img,
+  .img_third img,
+  .img_four img {
+    width: 228px;
+    height: 128px;
+  }
+  .img_fist h1,
+  .img_second h1,
+  .img_third h1,
+  .img_four h1 {
+    color: #2e2e2e;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .more_photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 945px;
+    margin-left: 230px;
+    margin-top: 30px;
+  }
+  .bottom_btn button {
+    width: 141px;
+    height: 40px;
+    color: white;
+    background-color: #5d1ff2;
+    transition-duration: 0.3s;
+    margin-left: 640px;
+    margin-top: 50px;
+  }
+  .bottom_btn button:hover {
+    background-color: #2a230a;
+  }
+  
+  /* --------------------vlog-finish----------------------------------------------------- */
+  /* --------------------my_history-start----------------------------------------------------- */
+  
+  .history_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  
+  .my_history_text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .my_history_text h1 {
+    color: #242424;
+    font-size: 60px;
+    width: 290px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .my_history_text h2 {
+    color: #242424;
+    font-size: 16px;
+    width: 320px;
+    line-height: 24px;
+    font-weight: 100;
+  }
+  
+  .text_btn {
+    position: absolute;
+    width: 141px;
+    height: 40px;
+    color: white;
+    background-color: #5d1ff2;
+    transition-duration: 0.3s;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    top: 2735px;
+    cursor: pointer;
+  }
+  .text_btn:hover {
+    background-color: #2a230a;
+  }
+  .my_photo img {
+    position: relative;
+    height: 702px;
+    width: 555px;
+    z-index: 1;
+  }
+  .height_line {
+    position: relative;
+    width: 12.8px;
+    height: 664px;
+    background-color: #5d1ff2;
+    margin-top: -706px;
+    z-index: 2;
+  }
+  .width_line {
+    position: relative;
+    width: 466px;
+    height: 13px;
+    background-color: #5d1ff2;
+    margin-left: 845px;
+    top: 37px;
+    z-index: 2;
+  }
+  
+  /* --------------------my_history-finish----------------------------------------------------- */
+  
+  /* --------------------my_life-start----------------------------------------------------- */
+  .pictures_box h1 {
+    width: 1200px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #242424;
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .top_pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .bottom_pictures {
+    display: flex;
+    justify-content: space-between;
+  }
+  .first_pictures_first {
+    width: 468px;
+    height: 468px;
+  }
+  .first_img img,
+  .second_img img,
+  .third_img img,
+  .four_img img {
+    width: 228px;
+    height: 228px;
+  }
+  .first_pictures_second img {
+    margin-top: 5px;
+    width: 468px;
+    height: 471px;
+  }
+  .top_all_pictures {
+    margin-left: 120px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bottom_all_pictures {
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bottom_pictures_four img {
+    width: 468px;
+    height: 468px;
+  }
+  .bottom_img_first img,
+  .bottom_img_second img,
+  .bottom_img_third img,
+  .bottom_img_four img {
+    width: 228px;
+    height: 228px;
+  }
+  .top_img_in_bottom {
+    width: 468px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .bottom_img_in_bottom {
+    width: 468px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .show_more {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    width: 140px;
+    height: 40px;
+    border: solid 1px #767676;
+    color: #767676;
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    margin-left: 530px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .show_more:hover {
+    color: #a1a1a1;
+  }
+  .show_more:active {
+    color: black;
+  }
+  
+  /* --------------------my_life-finish----------------------------------------------------- */
+  
+  /* --------------------subscribe-start----------------------------------------------------- */
+  
+  .subscribe_box {
+    width: 100%;
+    height: 651px;
+    background-color: #5d1ff2;
+    margin-bottom: 80px;
+  }
+  .connection h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 72px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+    display: inline-block;
+    width: 570px;
+    height: 72px;
+    padding-left: 390px;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    padding-left: 500px;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 40px;
+  }
+  .vk_icon {
+    font-size: 24px;
+  }
+  .you_tube_icon {
+    font-size: 24px;
+  }
+  .snapchat_icon {
+    font-size: 24px;
+  }
+  .instagram_icon {
+    font-size: 24px;
+  }
+  .twitter_icon {
+    font-size: 24px;
+  }
+  .facebook_icon {
+    font-size: 24px;
+  }
+  .bottom_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    padding-left: 200px;
+  }
+  .social_media h1 {
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  .social_media h2 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .social_media h3 {
+    font-size: 16px;
+    color: #fffffff3;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  .social_media h4 {
+    font-size: 25px;
+    color: #fffffff3;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  .social_media h5 {
+    font-size: 16px;
+    color: #fffffff3;
+    font-weight: 100;
+    margin-bottom: 25px;
+  }
+  .social_media h6 {
+    font-size: 16px;
+    color: #fffffff3;
+    font-weight: 100;
+  }
+  .name_btn input {
+    color: rgb(255, 255, 255);
+    width: 500px;
+    height: 20px;
+    font-size: 16px;
+    padding: 6px 0 8px 25px;
+    background-color: #00000000;
+    border: solid 1px white;
+    transition-duration: 0.1s;
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+  .name_btn input::placeholder {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+  }
+  .name_btn input:hover {
+    border: solid 2px white;
+  }
+  .name_btn input:hover,
+  .name_btn input:focus {
+    border: solid 2px white;
+    outline: none; /* Убираем стандартный фокусовочный контур (если не нужен) */
+  }
+  .gmail_btn input {
+    color: rgb(255, 255, 255);
+    width: 500px;
+    height: 20px;
+    font-size: 16px;
+    padding: 6px 0 8px 25px;
+    background-color: #00000000;
+    border: solid 1px white;
+    transition-duration: 0.1s;
+  }
+  .gmail_btn input::placeholder {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+  }
+  .gmail_btn input:hover {
+    border: solid 2px white;
+  }
+  .gmail_btn input:hover,
+  .gmail_btn input:focus {
+    border: solid 2px white;
+    outline: none; /* Убираем стандартный фокусовочный контур (если не нужен) */
+  }
+  
+  .send_btn form {
+    width: 528px;
+    margin: 20px auto;
+  }
+  #userMessage_send {
+    width: 100%;
+    height: 116px;
+    resize: none;
+    font-size: 16px;
+    padding: 15px 0 0 25px;
+    box-sizing: border-box;
+    border: solid 1px rgb(255, 255, 255);
+    background-color: #00000000;
+    color: white;
+  }
+  #userMessage_send::placeholder {
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+  }
+  #userMessage_send:hover,
+  #userMessage_send:focus {
+    border: solid 2px white;
+    outline: none;
+  }
+  .submit-button_send {
+    color: white;
+    background-color: #ffffff00;
+    width: 100px;
+    height: 30px;
+    margin-left: 410px;
+  }
+  
